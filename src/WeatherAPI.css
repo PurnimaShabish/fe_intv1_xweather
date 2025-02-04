@@ -38,7 +38,7 @@ button{
     margin: 0 auto;
 }
 
-.grid-item{
+.weather-card{
     margin-top: 15px;
     background-color: white;
     border-radius: 5px;
