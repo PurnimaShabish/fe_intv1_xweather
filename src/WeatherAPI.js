@@ -66,7 +66,7 @@ export default function WeatherAPI(){
 
             {isLoading?(<p style={{color:"grey", fontFamily:"Robot"}}>Loading Data...</p>) 
             :
-            (apiData.temp_c?
+            (apiData?
                 (<div className="weather-cards">
                     <div className="weather-card">
                         {weatherCard("Temperature",apiData.temp_c,"°C")}
