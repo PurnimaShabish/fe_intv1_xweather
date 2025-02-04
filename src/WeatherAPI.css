@@ -1,0 +1,45 @@
+.container{
+    width:100vw;
+    height: 100vh;
+    background-color: #cff9fc;
+}
+/* form{
+    padding-top: 20%;
+    column-gap:10px;
+} */
+
+input{
+    margin-top: 20%;
+    margin-right: 10px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+}
+
+button{
+    background-color: rgb(96, 187, 36);
+    border-radius: 3px;
+    width: 70px;
+    height: 30px;
+    border: none;
+}
+
+.weather-fragment{
+    margin: 0 auto;
+}
+
+.weather-cards{
+    display: grid;
+    width: 70%;
+    height: auto;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    margin: 0 auto;
+}
+
+.grid-item{
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
