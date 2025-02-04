@@ -63,7 +63,7 @@ export default function WeatherAPI(){
             </input> 
 
             <button onClick={handleSearch}>Search</button>
-            {isLoading?<p style={{color:"grey", fontFamily:"Robot"}}>Loading Data...</p> : null}
+            {/*{isLoading?<p style={{color:"grey", fontFamily:"Robot"}}>Loading Data...</p> : null}*/}
             {(!isLoading && apiData.temp_c)?
                 (<div className="weather-cards">
                     <div className="weather-card">
@@ -79,7 +79,7 @@ export default function WeatherAPI(){
                         {weatherCard("Wind Speed", apiData.wind_kph,"kph")}
                     </div>
                 </div>)
-                :null}
+                :(isLoading?<p style={{color:"grey", fontFamily:"Robot"}}>Loading Data...</p> : null)}
         </div>
     );
 
