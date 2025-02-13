@@ -45,6 +45,7 @@ export default function WeatherAPI(){
     // </div>
 
     const weatherCard = (name,data,unit) => {
+        console.log(`name : ${name}; date: ${data} unit: ${unit}`);
         return(
             <>
                 <h4 style={{marginBottom:"-10px",fontFamily:"Robot"}}>{name}</h4>
@@ -64,7 +65,7 @@ export default function WeatherAPI(){
 
             <button onClick={handleSearch}>Search</button>
 
-            {isLoading?(<p style={{color:"grey", fontFamily:"Robot"}}>Loading Data...</p>) 
+            {isLoading?(<p style={{color:"grey", fontFamily:"Robot"}}>Loading data...</p>) 
             :
             (apiData.temp_c?
                 (<div className="weather-cards">
@@ -81,7 +82,7 @@ export default function WeatherAPI(){
                         {weatherCard("Wind Speed", apiData.wind_kph,"kph")}
                     </div>
                 </div>)
-                : "")}
+                :"")}
         </div>
     );
 
